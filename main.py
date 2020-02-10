@@ -10,6 +10,9 @@ while run:
     if event.type == pygame.QUIT:
       run = False
 
+pygame.image.load([your filename here]).convert()
+
+
 # Game code starts here ---------------------
   win.fill((0, 0, 0))
 

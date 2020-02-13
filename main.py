@@ -27,10 +27,10 @@ smalldust = pygame.Surface([48,48]).convert()
 smalldust.blit(spritesheet, (0,0), (96,72,32,32))
 
 # Create the font
-font = pygame.font.SysFont("arial", 72)
-
+font = pygame.font.SysFont("arial italic", 50)
+  
 # Create the text object
-text = font.render("this is a viruz", True, (255, 255, 255))
+text = font.render("THE LONE WARRIOR 狼", True, (255, 255, 255))
 
 run = True
 while run:

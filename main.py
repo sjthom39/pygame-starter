@@ -26,6 +26,8 @@ dust.blit(spritesheet, (0,0), (128, 72, 32, 32))
 smalldust = pygame.Surface([48,48]).convert()
 smalldust.blit(spritesheet, (0,0), (96,72,32,32))
 
+back=pygame.image.load('assets/dark background.png')
+
 # Create the font
 font = pygame.font.SysFont("arial italic", 50)
   
@@ -43,13 +45,17 @@ while run:
   #win.blit(img, (400,300))
   # win.blit(chest_closed,(100,100))
   #win.blit(chest_open,(150,100))
-  win.blit(text,(400,300))
+  win.blit(dark background,( ))
   
+  win.blit(text,(400,300))
+
   win.blit(smalldust, (130,300))
 
   win.blit(bush, (150, 100))
 
   win.blit(dust, (140, 200))
+
+
   #win.blit(spritesheet, (100, 200))
 
   # Draw a rectangle

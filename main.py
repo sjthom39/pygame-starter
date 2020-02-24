@@ -3,11 +3,11 @@ import pygame # import library
 pygame.init()
 #spygame.image.load(samuri).convert()
 # Create the window
-win = pygame.display.set_mode((800, 600))
+win = pygame.display.set_mode((1500, 990))
 img=pygame.image.load('assets/samuri.png')
 
 # Load the spritesheet
-spritesheet = pygame.image.load('assets/gfx/objects.png').convert()
+spritesheet = pygame.image.load('assets/gfx/objects.png').convert_alpha()
 
 # Create the first image
 chest_closed = pygame.Surface([16, 16]).convert() # Create a surface with size 16 x 16
@@ -20,13 +20,13 @@ chest_open.blit(spritesheet, (0, 0), (16, 0, 16, 16))
 bush = pygame.Surface([16, 16]).convert()
 bush.blit(spritesheet, (0, 0), (32, 0, 16, 16))
 
-dust = pygame.Surface([32,32]).convert()
+dust = pygame.Surface([32,32]).convert_alpha()
 dust.blit(spritesheet, (0,0), (128, 72, 32, 32))
 
 smalldust = pygame.Surface([48,48]).convert()
 smalldust.blit(spritesheet, (0,0), (96,72,32,32))
 
-back=pygame.image.load('assets/dark background.png')
+back = pygame.image.load('assets/dark background.png')
 
 # Create the font
 font = pygame.font.SysFont("arial italic", 50)
@@ -45,7 +45,7 @@ while run:
   #win.blit(img, (400,300))
   # win.blit(chest_closed,(100,100))
   #win.blit(chest_open,(150,100))
-  win.blit(dark background,( ))
+  win.blit(back,(0, 0 ))
   
   win.blit(text,(400,300))
 

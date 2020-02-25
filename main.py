@@ -40,6 +40,16 @@ while run:
     if event.type == pygame.QUIT:
       run = False
 
+  keys=pygame.key.get_pressed()
+  if keys[pygame.K_LEFT]:
+    x-=1
+   
+  if keys[pygame.K_RIGHT]:
+    x+=1
+  
+
+
+
 # Game code starts here ---------------------
   win.fill((0, 0, 0))
   #win.blit(img, (400,300))

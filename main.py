@@ -30,8 +30,6 @@ back = pygame.image.load('assets/dark background.png')
 
 # Create the font
 font = pygame.font.SysFont("arial italic", 50)
-  
-# Create the text object
 text = font.render("THE LONE WARRIOR 狼", True, (255, 255, 255))
 
 run = True
@@ -45,7 +43,7 @@ while run:
     x-=1
    
   if keys[pygame.K_RIGHT]:
-    x+=1
+    pass
   
 
 

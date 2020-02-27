@@ -27,14 +27,14 @@ smalldust = pygame.Surface([48,48]).convert()
 smalldust.blit(spritesheet, (0,0), (96,72,32,32))
 
 #samuri images
-samuri.png = pygame.image.load('assets/samuri.png')
+samuri = pygame.image.load('assets/samuri.png')
 
-samuri = pygame.surface([16,16]).convert()
-samuri.blit(samuri.png, (0,0), (96,72,32,32))
+samuri = pygame.Surface([54, 69]).convert()
+samuri.blit(samuri, (1,1), (96, 72, 52, 62))
 
 
 
- back = pygame.image.load('assets/dark background.png')
+back = pygame.image.load('assets/dark background.png')
 
 # Create the font
 font = pygame.font.SysFont("arial italic", 50)
@@ -71,6 +71,7 @@ while run:
 
   win.blit(dust, (140, 200))
 
+  win.blit(samuri, (10, 10))
 
   #win.blit(spritesheet, (100, 200))
 
